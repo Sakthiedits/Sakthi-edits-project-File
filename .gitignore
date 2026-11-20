@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# Environment files with secrets
+worker/.dev.vars
+frontend/.env
+
+# Vite local config
+frontend/.env.local
+
+# Wrangler generated
+worker/.wrangler/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+video/

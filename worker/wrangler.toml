@@ -1,0 +1,24 @@
+name = "sakthiedits-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ALLOWED_ORIGIN = "http://localhost:5173"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sakthiedits-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Uncomment when R2 is configured:
+# [[r2_buckets]]
+# binding = "R2_BUCKET"
+# bucket_name = "sakthiedits-videos"
+
+[dev]
+port = 8787
+
+[env.production]
+[env.production.vars]
+ALLOWED_ORIGIN = "https://sakthiedits.pages.dev"
